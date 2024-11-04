@@ -5,28 +5,24 @@ import NavLogo from "../assets/itp-pib-logo.png";
 
 function Navleft() {
   return (
-    <div className="flex justify-center">
-      <div className="min-h-screen relative flex flex-col p-4 mx-auto border-r-2 border-navBlue">
-        <div className="flex flex-col items-center ">
-          <div className="w-full flex-col">
-            <img src={NavLogo} alt="Logo" className="w-32 h-auto mx-auto" />
-            <div className="border-b-2 border-navBlue w-full mt-4" />
-          </div>
+    <div className="fixed top-0 left-0 min-h-screen flex flex-col justify-between border-r-2 border-navBlue z-10 p-4">
+      <div className="flex flex-col items-center">
+        <img src={NavLogo} alt="Logo" className="w-32 h-auto mb-6" />
+        <div className="mt-32 flex flex-col items-center space-y-8"> 
+          {buttonsData.map((button, index) => (
+            <Navbtn
+              key={index}
+              label={button.label}
+              onClick={button.onClick}
+              className="w-full text-center" 
+            />
+          ))}
+        </div>
+      </div>
 
-          <div className="flex flex-col items-center space-y-4 mt-20">
-            {buttonsData.map((button, index) => (
-              <Navbtn
-                key={index}
-                label={button.label}
-                onClick={button.onClick}
-              />
-            ))}
-          </div>
-        </div>
-        <div className="absolute font-xs bottom-4 left-0 right-0 text-center">
-          Lacrimosa <br />
-          version 0.0.1
-        </div>
+      <div className="text-center mb-4">
+        Lacrimosa <br />
+        version 0.0.1
       </div>
     </div>
   );

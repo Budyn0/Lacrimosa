@@ -1,10 +1,10 @@
 import React from "react";
-import Navleft from "../molecules/nav-left";
+import Navbar from "../organisms/nav-bar";
 
 function Dashboard() {
   return (
     <div className="flex mx-auto">
-      <Navleft />
+      <Navbar />
     </div>
   );
 }
