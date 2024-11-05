@@ -1,6 +1,6 @@
 import React from "react";
 import Navbtn from "../atoms/nav-btn";
-import buttonsData from "../utils/button-handlers";
+import buttonsData from "../utils/nav-button-handlers";
 import NavLogo from "../assets/itp-pib-logo.png";
 
 function Navleft() {
