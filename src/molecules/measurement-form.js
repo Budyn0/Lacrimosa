@@ -6,7 +6,7 @@ function MeasurementForm() {
 
   return (
     <div className="flex justify-center items-center min-h-screen">
-      <h1 className="text-3xl">Measurement Form {formId}</h1>
+      <h1 className="text-3xl">Formularz pomiarowy {formId}</h1>
     </div>
   );
 }

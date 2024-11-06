@@ -8,7 +8,7 @@ function Dashboard() {
       <div className="max-w-1440px grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 w-full">
         {[...Array(9)].map((_, index) => (
           <Link key={index} to={`/measurement-form/${index + 1}`}>
-            <DashboardButton label={`Form ${index + 1}`} className="w-full" />
+            <DashboardButton label={`Formularz ${index + 1}`} />
           </Link>
         ))}
       </div>
